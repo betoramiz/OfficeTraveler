@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 const route: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {
@@ -15,6 +15,10 @@ const route: Routes = [
   {
     path: 'signup',
     loadChildren: () => import('./register/register.module').then(m => m.RegisterModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
   }
 ]
 
