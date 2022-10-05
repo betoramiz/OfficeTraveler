@@ -9,12 +9,16 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { DashboardComponent } from './dashboard.component';
+import { InformationComponent } from './information/information.component';
+import { ReservationsComponent } from './reservations/reservations.component';
 
 
 @NgModule({
   declarations: [
   
-    DashboardComponent
+    DashboardComponent,
+       InformationComponent,
+       ReservationsComponent
   ],
   imports: [
     CommonModule,
