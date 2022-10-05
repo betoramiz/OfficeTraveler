@@ -4,7 +4,7 @@ import { SinginComponent } from './singin/singin.component';
 
 const routes: Routes = [
   {
-    path: 'singin',
+    path: '',
     component: SinginComponent
   }
 ];
