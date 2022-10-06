@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+//html, body { height: 100%; }
+//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+  margin: 15px;
+}
+
+.container__login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  align-items: center;
+}
