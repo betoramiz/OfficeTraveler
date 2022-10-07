@@ -7,6 +7,11 @@ import { ReservationsComponent } from './reservations/reservations.component';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'information',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     component: DashboardComponent,
     children: [
       {

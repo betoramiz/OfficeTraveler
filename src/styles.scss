@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -28,8 +32,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   align-items: center;
 }
 
-.form__field-contentwith mat-form-field {
-  display: contents;
+.form__field-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form__field-marginFirstItem > :first-child {
+  margin-right: 55px;
 }
 
 .mat-card-80 {
