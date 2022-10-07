@@ -1,28 +1,26 @@
-<div class="container">
-  <div class="container__login">
-    <mat-card>
+<div class="container container-center">
+    <mat-card class="mat-card-80">
       <mat-card-title>Iniciar sesion</mat-card-title>
       <mat-card-content>
         <form class="form">
-          <div class="form__field">
+          <div class="form__field form__field-contentwith">
             <mat-form-field appearance="outline">
               <mat-label>Correo Electronico</mat-label>
-              <input matInput placeholder="user@email.com">
+              <input type="email" matInput placeholder="user@email.com">
               <mat-icon matSuffix>email</mat-icon>
             </mat-form-field>
           </div>
-          <div class="form__field">
+          <div class="form__field form__field-contentwith">
             <mat-form-field appearance="outline">
               <mat-label>Contrasena</mat-label>
-              <input matInput placeholder="******">
+              <input type="password" matInput placeholder="******">
               <mat-icon matSuffix>visibility_off</mat-icon>
             </mat-form-field>
           </div>
         </form>
       </mat-card-content>
       <mat-card-actions>
-        <button type="submit" color="primary" mat-raised-button>Entrar</button>
+        <button type="submit" color="primary" mat-raised-button routerLink="/dashboard">Entrar</button>
       </mat-card-actions>
     </mat-card>
-  </div>
 </div>
