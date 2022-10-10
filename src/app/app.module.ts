@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRouteModule } from './app-route.module';
 import { RouterOutlet } from '@angular/router';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RouterOutlet } from '@angular/router';
     BrowserModule,
     BrowserAnimationsModule,
     AppRouteModule,
-    RouterOutlet
+    RouterOutlet,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
