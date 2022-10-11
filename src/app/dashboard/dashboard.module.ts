@@ -15,6 +15,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { StoreModule } from '@ngrx/store';
+import { dashboardFeatureState } from './store/dashboard/dashboard.state';
+import { dasbhboardReducers } from './store/dashboard/dashboard.reducers';
+import { MatRippleModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    StoreModule.forFeature(dashboardFeatureState, dasbhboardReducers),
+    MatRippleModule
   ]
 })
 export class DashboardModule { }
