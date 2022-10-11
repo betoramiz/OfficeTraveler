@@ -19,13 +19,16 @@ import { StoreModule } from '@ngrx/store';
 import { dashboardFeatureState } from './store/dashboard/dashboard.state';
 import { dasbhboardReducers } from './store/dashboard/dashboard.reducers';
 import { MatRippleModule } from '@angular/material/core';
+import { SpacesComponent } from './spaces/spaces.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
 
     DashboardComponent,
        InformationComponent,
-       ReservationsComponent
+       ReservationsComponent,
+       SpacesComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +44,8 @@ import { MatRippleModule } from '@angular/material/core';
     MatInputModule,
     MatCheckboxModule,
     StoreModule.forFeature(dashboardFeatureState, dasbhboardReducers),
-    MatRippleModule
+    MatRippleModule,
+    MatTableModule
   ]
 })
 export class DashboardModule { }
