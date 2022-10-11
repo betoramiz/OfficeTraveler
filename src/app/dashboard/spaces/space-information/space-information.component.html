@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="flex justify-between">
+    <span>Detalle {{ id }}</span>
+    <button mat-button>
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="flex align-baseline ml-10 mt-4 hover:cursor-pointer" [routerLink]="'/dashboard/spaces/list'">
+  <mat-icon>arrow_back</mat-icon>
+  <div class="ml-3 pt-0.5">Regresar</div>
+</div>
+
+<mat-card class="mx-10 mt-4">
+<span>Datos del coworking</span>
+</mat-card>

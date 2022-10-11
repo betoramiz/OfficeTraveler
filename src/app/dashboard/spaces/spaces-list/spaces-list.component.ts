@@ -8,11 +8,11 @@ export interface TestData {
 }
 
 @Component({
-  selector: 'app-spaces',
-  templateUrl: './spaces.component.html',
-  styleUrls: ['./spaces.component.css']
+  selector: 'app-spaces-list',
+  templateUrl: './spaces-list.component.html',
+  styleUrls: ['./spaces-list.component.css']
 })
-export class SpacesComponent implements OnInit {
+export class SpacesListComponent implements OnInit {
 
   dataSource: TestData[] = [
     { name: 'coworking 1', location: 'La Paz BCS', memberSince: '10 de Enero de 2020', id: 1 },
