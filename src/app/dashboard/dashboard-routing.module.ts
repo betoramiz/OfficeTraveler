@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { InformationComponent } from './information/information.component';
 import { ReservationsComponent } from './reservations/reservations.component';
-import { InventoryComponent } from './inventory/inventory.component';
 
 const routes: Routes = [
   {
@@ -29,7 +28,7 @@ const routes: Routes = [
       },
       {
         path: 'inventory',
-        component: InventoryComponent
+        loadChildren: () => import('./inventory/inventory.module').then(m => m.InventoryModule)
       }
     ]
   }
