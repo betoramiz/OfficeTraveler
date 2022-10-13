@@ -10,6 +10,11 @@ export class SpaceInformationComponent implements OnInit {
 
   id = 0;
 
+  information = {
+    name: 'Some Name',
+    location: 'Aquiles Sendan Sin numero, La Paz BCS'
+  }
+
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {

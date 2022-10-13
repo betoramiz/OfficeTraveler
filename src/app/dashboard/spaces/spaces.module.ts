@@ -10,6 +10,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SpaceInformationComponent } from './space-information/space-information.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { MatCardModule } from '@angular/material/card';
     MatTableModule,
     MatMenuModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatDividerModule
   ]
 })
 export class SpacesModule { }

@@ -7,11 +7,20 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<div class="flex align-baseline ml-10 mt-4 hover:cursor-pointer" [routerLink]="'/dashboard/spaces/list'">
-  <mat-icon>arrow_back</mat-icon>
-  <div class="ml-3 pt-0.5">Regresar</div>
+<div class="ml-10 mt-4" [routerLink]="'/dashboard/spaces/list'">
+  <button mat-icon-button>
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+<!--  <div class="ml-3 pt-0.5">Regresar</div>-->
 </div>
 
-<mat-card class="mx-10 mt-4">
-<span>Datos del coworking</span>
+<mat-card class="mt-4 sm:mx-1.5 md:mx-10">
+  <div class="mt-5 mb-5">
+    <span class="text-xl text-gray-400 font-thin">{{ information.name }}</span>
+    <header class="text-xs text-purple-600 ">Nombre</header>
+  </div>
+  <div class="mt-10 mb-5">
+    <span class="text-xl text-gray-400 font-thin">{{ information.location }}</span>
+    <header class="text-xs text-purple-600">Ubicacion</header>
+  </div>
 </mat-card>
