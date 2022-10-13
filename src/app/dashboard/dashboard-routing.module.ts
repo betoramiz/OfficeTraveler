@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { InformationComponent } from './information/information.component';
 import { ReservationsComponent } from './reservations/reservations.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
       {
         path: 'spaces',
         loadChildren: () => import('./spaces/spaces.module').then(x => x.SpacesModule)
+      },
+      {
+        path: 'inventory',
+        component: InventoryComponent
       }
     ]
   }

@@ -21,13 +21,15 @@ import { dasbhboardReducers } from './store/dashboard/dashboard.reducers';
 import { MatRippleModule } from '@angular/material/core';
 import { MatTableModule } from '@angular/material/table';
 import { SpacesModule } from './spaces/spaces.module';
+import { InventoryComponent } from './inventory/inventory.component';
 
 @NgModule({
   declarations: [
 
     DashboardComponent,
        InformationComponent,
-       ReservationsComponent
+       ReservationsComponent,
+       InventoryComponent
   ],
   imports: [
     CommonModule,
