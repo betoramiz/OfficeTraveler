@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { OfficesComponent } from './offices/offices.component';
-import { OfficeDetailComponent } from './office-detail/office-detail.component';
 
 const routes: Routes = [
   {
@@ -12,10 +11,6 @@ const routes: Routes = [
   {
     path: 'offices',
     component: OfficesComponent
-  },
-  {
-    path: 'office/:id/detail',
-    component: OfficeDetailComponent
   }
 ];
 

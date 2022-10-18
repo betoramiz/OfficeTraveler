@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row class="flex justify-between">
     <span>Tipos de oficinas</span>
-    <button mat-button>
+    <button mat-button (click)="openDialog()">
       <mat-icon>add</mat-icon>
     </button>
   </mat-toolbar-row>
@@ -18,6 +18,15 @@
     <ng-container matColumnDef="inventory">
       <th mat-header-cell *matHeaderCellDef>Inventario</th>
       <td mat-cell *matCellDef="let element">{{ element.inventory }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="option">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button aria-label="Example icon-button with a menu" (click)="openDetail(element)">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

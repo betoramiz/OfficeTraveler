@@ -3,17 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { InventoryRoutingModule } from './inventory-routing.module';
 import { OfficesComponent } from './offices/offices.component';
-import { OfficeDetailComponent } from './office-detail/office-detail.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AddOfficeTypeComponent } from './add-office-type/add-office-type.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     OfficesComponent,
-    OfficeDetailComponent
+    AddOfficeTypeComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +25,11 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ]
 })
 export class InventoryModule { }

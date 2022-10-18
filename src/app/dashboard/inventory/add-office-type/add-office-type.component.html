@@ -1,0 +1,16 @@
+<h2 matDialogTitle>{{ data.dialogTitle }} Tipo de Oficina</h2>
+<mat-dialog-content>
+  <mat-form-field class="w-5/6">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Nombre de la sala" [(ngModel)]="data.room" autocomplete="off">
+  </mat-form-field>
+
+  <mat-form-field class="w-5/6">
+    <mat-label>Inventario</mat-label>
+    <input type="number" matInput placeholder="1" [(ngModel)]="data.inventory" autocomplete="off">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button type="button" mat-raised-button color="primary">Agregar</button>
+  <button type="button" matDialogClose="true" mat-raised-button color="default">Cancelar</button>
+</mat-dialog-actions>
